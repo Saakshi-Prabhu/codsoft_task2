@@ -1,0 +1,440 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ===========================================  Home  ============================================= */
+
+
+body {
+    background-color: #F5F5DC;
+    width: 100%;
+    
+}
+
+/* =============================  Navigation Bar  ============================== */
+.navigation {
+    font-family: 'Caprasimo', cursive;
+}
+
+.navigation ul {
+    overflow: auto;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 1rem;
+}
+
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: transform 2s;
+}
+
+.navigation ul li a::after {
+    background-color: rgb(58, 156, 161);
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navigation ul li a:hover {
+    width: 100%;
+    color: rgb(58, 156, 161);
+    /* transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); */
+}
+
+/* ============================= Hey i am Rutika patil ============================ */
+
+.Hey p {
+    font-size: 5.5vw;
+    font-family: 'Belanosima', sans-serif;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+.Hey {
+    padding-top: 14rem;
+    padding-left: 7rem;
+}
+
+.Hey span{
+    color: rgb(51, 139, 144);
+}
+.name {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* ========================= intro box  ============================ */
+p {
+    font-family: 'Belanosima', sans-serif;
+
+}
+
+.intro {
+    font-size: 1.36rem;
+    margin-right: 7%;
+    margin-left: 15%;
+}
+
+.lines {
+
+    size: 2%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+    position: absolute;
+    bottom:11rem ;
+    right:6vw;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(51, 139, 144));
+    border-radius: 3rem; 
+    width: 26rem;
+    height: auto;
+}
+.grid-container div{
+    font-size: 1vw;
+    line-height: 1.3;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: rgb(240, 219, 191);
+}
+
+/* ======================  Responsive  =================================== */
+
+@media only screen and (max-width:1314px ){
+    .grid-container{
+        position: absolute;
+        width:30vw ;
+        top: 9rem;
+        right: 2.8rem;
+    }
+    .lines{
+        size: 1%;
+    }
+}
+
+/* ======================   About   ====================== */
+#about {
+    color: black;
+    margin: 300px 0 100px 0;
+}
+ 
+.name-color1{
+    color: rgb(41, 178, 175);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 50px 30px 0 30px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Caprasimo', cursive;
+}
+
+.sub-title2 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1.5rem;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 100px;
+}
+
+.tab-links {
+    margin: 20px 50px;
+    font-size: 30px;
+    font-weight: 1000;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(58, 156, 161);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0px ;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 18px;
+}
+
+.tab-contents ul li span {
+    font-weight: bold;
+    color: rgb(1, 3, 33);
+    font-size: 20px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.skills {
+    display: block;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Projects  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+#Portfolio {
+    padding: 130px 0 0 ;
+}
+
+.sub-title-2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Caprasimo', cursive;
+    margin: 0px 41% 100px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 80px 150px 0 150px;
+}
+
+.project-list div{
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(51, 139, 144));
+    width: 100%;
+    height: 100%;
+    border-radius: 26px;
+    padding: 80px 15px 90px 15px;
+    font-size: 18px;
+    transition:  transform 0.5s;
+    line-height: 1.3;
+}
+
+.project-list div h2{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 20px ;
+    font-family: 'Caprasimo', cursive;
+}
+
+/* .link-anchor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    color:rgb(51, 139, 144) ;
+    text-decoration: none; */
+    /* font-size: 18px; */
+    /* line-height: 60px; */
+    /* background-color: rgb(240, 219, 191); */
+    /* width: 60px; */
+    /* height: 60px; */
+    /* border-radius: 50%; */
+/* } */
+
+.project-list div:hover {
+    background-color:rgb(51, 139, 144) ;
+    transform: translateY(-10px);
+    color: rgb(240, 219, 191);
+}
+
+/* .link-anchor:hover{
+    background:gray;
+    color:  rgb(240, 219, 191);
+} */
+
+/* .btn{
+    margin: 50px auto;
+    display: block;
+    width: fit-content;
+    border: 2px solid rgb(77, 58, 58);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:rgb(45, 104, 107);
+    transition: transform 0.5s;
+    font-size: 16.7px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.btn:hover{
+    background: rgb(51, 139, 144);
+    color: rgb(46, 23, 23);
+    padding: 14px 45px;
+    font-size: 19px;
+    border-radius: 8px;
+} */
+
+/* =====================  Contact =================== */
+#contact{
+    margin-top: 190px;
+}
+
+.title-3{
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Caprasimo', cursive;
+    margin: 0px 41% 50px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin: 40px 0 0 35px ;
+    font-size: 20px;
+}
+.contact-left p i{
+    margin-right: 15px;
+    font-size: 25px;
+    color:rgb(33, 91, 95) ;
+}
+
+.social-icons{
+    margin: 35px 0 0 35px;
+}
+.social-icons a i{
+    font-size: 25px;
+    color:rgb(33, 91, 95);
+    margin-right: 15px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Belanosima', sans-serif;
+}
+
+ .btn2{
+    display: inline-block;
+    background:rgb(33, 91, 95);
+    color: rgb(240, 219, 191) ;
+    margin: 35px 0 0 30px;
+    width: fit-content;
+    border: 2px solid rgb(77, 58, 58);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16.7px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.contact-right{
+    width: 100%;
+    margin-bottom: 30px;
+}
+ 
+form input, form textarea{
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    background:rgb(33, 91, 95) ;
+    color: rgb(240, 219, 191);
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.btn3{
+    margin-top: 20px;
+    padding: 14px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 0;
+    transition: transform 0.5s;
+    margin-bottom: 30px;
+}
+
+.btn3:hover{
+    color: rgb(229, 102, 123);
+}
+
+.copyright{
+    background-color:rgb(87, 87, 87);
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+#msg{
+    color:rgb(40, 11, 11);
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.scroll-up{
+    margin-bottom: 50.5px;
+}
+.scroll-up a{
+    position: absolute;
+    right: 50%;
+    background:rgb(188, 188, 188);
+    padding:15px 18px;
+    border: none;
+    border-radius: 100%;
+    font-size: 18px;
+    color: rgb(51, 139, 144);
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.scroll-up a:hover{
+    background:rgb(51, 139, 144);
+    color:rgb(240, 219, 191);
+}

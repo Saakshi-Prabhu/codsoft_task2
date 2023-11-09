@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- -----------------------------Home Page------------------------------ -->
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <!-- <li><a href="#resume">Resume</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="home">
+        <div class="Hey">
+            <p>Hey, <span>I'm Saakshi P</span>. <br /> A Frontend Developer.</p>
+        </div>
+        <!-- /////////////////////////////////////// grid introbox ////////////////////////////// -->
+        <div class="grid-container">
+            <div>
+                <p class="lines">--------------------------------</p>
+                <p class="intro"><span class="name">Saakshi P (She/her),</span> <br><br> Global Academy of Technology Student
+                    |
+                    Pursuing
+                    Btech in Computer Science and Engineering | <br>Web Development Enthusiast |<br>
+                    Seeking
+                    Opportunities to Grow</p>
+                <p class="lines">--------------------------------</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------About Section-------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\Saaks\Downloads\photo 1.jpeg" alt="something is wrong!">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3><br><br>
+                    <p class="sub-title2">"Hello there! I'm <span class="name-color1">Saakshi P</span>, a web
+                        developer with a passion for crafting beautiful and functional websites. From an early age, I
+                        found joy in drawing and painting, nurturing my creative spirit. Now, as a web developer, I
+                        bring that same artistic flair to my work, designing seamless user interfaces and engaging
+                        experiences. With a love for learning and an eye for detail, I'm excited to embark on new
+                        projects and continue evolving as a developer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents skills" id="Skills">
+                        <ul>
+                            <li><span>Frontend! </span>- Buliding Websites</li>
+                            <li><span>HTML</span> - (intermediate)</li>
+                            <li><span>CSS</span> - (intermediate)</li>
+                            <li><span>JavaScript</span> - (intermediate)</li>
+                            <li><span>React</span> - (beginner)</li>
+                            <li><span>Bootstrap</span> - (beginner)</li>
+                            <li><span>UI/UX</span> - (Theoretical Knowledge)</li>
+                            <li><span>Python</span> - (Basic python coding)</li>
+                            <li><span>MySQL</span> - (beginner)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B.Tech, Computer Science & Engineering</span><br>
+                                <br>Global Academy of Technology<br>
+                                <br>2020 - 2024<br>
+                                <br>CGPA: 8.08/10<br>
+                            </li>
+
+                            <li><span>Senior Secondary (XII), Science</span><br>
+                                <br>K.L.E Society's P.U College, Bengaluru<br>
+                                <br>(DEPARTMENT OF PRE-UNIVERSITY EDUCATION board)<br>
+                                <br>Year of completion: 2020<br>
+                                <br>Percentage: 81.33%<br>
+                            </li>
+
+                            <li><span>Secondary (X)</span><br>
+                                <br>Vidyaniketan Public School,Bengaluru<br>
+                                <br>(CENTRAL BOARD OF SECONDARY EDUCATION)<br>
+                                <br>Year of completion: 2018<br>
+                                <br>Percentage: 80.60%<br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  Projects  ------------------------>
+    <div id="projects">
+        <div class="container">
+            <h3 class="sub-title-2">Projects</h3>
+            <div class="project-list">
+                <div>
+                    <h2>Cureency Converter</h2><br>
+                    <p>It is a calculator-like website which is developed using 
+                        Swing, Java servelet web features.In this application, there 
+                        is regular update about currency of every country by which 
+                        it displays present currency market value and conversion 
+                        rate.</p><br>
+                    <!-- <a href="#" class="link-anchor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+                <div>
+                    <h2>Face Recognition Based Attendance System</h2><br>
+                    <p>The Face Recognition-Based Attendance System is an innovative and efficient solution which uses deep learning 
+                        techniques designed to automate the attendance tracking 
+                        process in various environments.</p><br><br>
+                    <!-- <a href="#" class="link-anchor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+                <div>
+                    <h2>Real Estate House Price Prediction</h2><br>
+                    <p>Three machine learning regression algorithms were deployed on the dataset to compare which algorithms give 
+                        the highest accuracy and predict the selling prices of houses</p><br>
+                    <!-- <a href="#" class="link-anchor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <a href="#" class="btn">See More</a> -->
+
+    <!-- =====================  Contact ===================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <h3 class="sub-title-2 title-3">Contact Me</h3>
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>saakshiprabhu30@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8088574742</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saakshi-p-899ba1294/"><i
+                                class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    </div>
+                    <a href="C:\Users\Saaks\Downloads\resumee.pdf" download id="resume" class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2 btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-up">
+            <a href="#" id="home"><i class="fa-solid fa-angles-up fa-beat"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Rutika.</p>
+        </div>
+    </div>
+    <!----------------------  JS for About  ------------------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("skills")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("skills")
+        }
+    </script>
+    <!-- ///////////////////////  Form submisiion Sheet  ////////////////// -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwBWeuw38sC3NbtzlUHR72y8kKfm1utTqqxDw4Hgh9Awakjy2XbdLp4-sOOp3m8PbSOXQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
